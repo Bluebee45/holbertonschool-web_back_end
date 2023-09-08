@@ -39,7 +39,7 @@ class Server:
         pagination_range: Tuple = self.index_range(page, page_size)
         data: List = self.dataset()
 
-        return data[pagination_range[0] : pagination_range[1]]
+        return data[pagination_range[0]: pagination_range[1]]
 
     def get_hyper(self, page: int, page_size: int) -> Dict:
         """
