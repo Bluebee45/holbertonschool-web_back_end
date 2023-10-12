@@ -3,7 +3,7 @@ export default function updateStudentGradeBycity(students, city, newGrades) {
     .filter((student) => student.location === city)
     .map((student) => {
       const updatedGrade = newGrades.find(
-        (grade) => grade.studentId === student.id
+        (grade) => grade.studentId === student.id,
       );
       return {
         ...student,
